@@ -1,0 +1,22 @@
+body{
+    background-color: #F7A9A8;
+}
+
+.buttonText {
+    border-radius: 15px;
+    background-color: #EF798A ;
+    color: #613F75;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+
+
+h3 {
+    color: #7D82B8;
+}
+
+.sum{
+    padding-bottom: 7px;
+}
+
