@@ -16,7 +16,7 @@ function setGreeting() {
         greeting += "Good night!";
     }
 
-    console.log(greeting);
+    console.log(greeting); 
     document.getElementById("greetingOutput").textContent = greeting;
 
 }
@@ -43,4 +43,26 @@ function addNumbers()
     let sum = num1 + num2;
     
     document.getElementById("buttonSum").textContent = sum;
+}
+
+function findLen()
+{
+    let strLength = document.getElementById("fetchLetters").value;
+    let length = strLength.length;
+    document.getElementById("buttonLength").textContent = strLength + " has " + length + " characters";
+}
+
+function togglePassword() {
+    let passwordInput = document.getElementById("togglePassword");
+    if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+    } else {
+        passwordInput.type = "password";
+    }
+}
+
+function changeTextSize()
+{
+    let changeStyle = document.getElementById("changeText");
+    let color 
 }
