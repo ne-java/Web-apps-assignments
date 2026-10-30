@@ -64,5 +64,27 @@ function togglePassword() {
 function changeTextSize()
 {
     let changeStyle = document.getElementById("changeText");
-    let color 
+    let color;
+    let text;
+    color = changeStyle.style.color = "red";
+    text = changeStyle.style.fontSize = "32px";
+}
+
+let counter = 0;
+//only for when the button is clicked - acts like a while/for loop in itself!
+function hideShowFeature()
+{
+    let text = "This is a moody message";
+    let fakeText = "";
+    
+    if(counter % 2 === 0)
+    {
+        document.getElementById("hide-show-text").textContent = text;
+    }
+    else
+    {
+        document.getElementById("hide-show-text").textContent = fakeText;
+    }
+
+    counter++;
 }

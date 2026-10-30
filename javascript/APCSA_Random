@@ -1,0 +1,32 @@
+public class MyClass
+{
+    public static void main(String args[])
+    {
+        int evenCount = 0;
+        int oddCount = 0;
+
+        //Todo: create a for loop that runs 10 times
+        for (int i = 0; i < 10; i++)
+        {
+            //todo: generate a random integer between 0 and 99
+            int num = (int)(Math.random() * 100);
+
+            System.out.println("Generated number: " + num);
+
+            //todo check if the number is even or odd
+            if (num % 2 == 0)
+            {
+                evenCount++;
+            }
+            else
+            {
+                oddCount++;
+            }
+        }
+
+        //todo: print final counts
+        System.out.println("Number of even numbers: " + evenCount++);
+        System.out.println("Number of odd numbers: " + oddCount++);
+
+    }
+}
