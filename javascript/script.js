@@ -11,12 +11,11 @@ function setGreeting() {
     else if (hours >= 12 && hours < 18) {
         greeting += "Good afternoon!";
     }
-    else
-    {
+    else {
         greeting += "Good night!";
     }
 
-    console.log(greeting); 
+    console.log(greeting);
     document.getElementById("greetingOutput").textContent = greeting;
 
 }
@@ -25,28 +24,24 @@ window.onload = function () {
     setGreeting();
 }
 
-function setButtonText()
-{
+function setButtonText() {
     document.getElementById("buttonClickText").textContent = "Hello world - I am learning JavaScript :)"
 }
 
-function setButtonDateTime()
-{
+function setButtonDateTime() {
     let dateTime = new Date();
     document.getElementById("buttonDateTime").textContent = dateTime;
 }
 
-function addNumbers()
-{
+function addNumbers() {
     let num1 = parseInt(document.getElementById("number1").value);
     let num2 = parseInt(document.getElementById("number2").value);
     let sum = num1 + num2;
-    
+
     document.getElementById("buttonSum").textContent = sum;
 }
 
-function findLen()
-{
+function findLen() {
     let strLength = document.getElementById("fetchLetters").value;
     let length = strLength.length;
     document.getElementById("buttonLength").textContent = strLength + " has " + length + " characters";
@@ -61,8 +56,7 @@ function togglePassword() {
     }
 }
 
-function changeTextSize()
-{
+function changeTextSize() {
     let changeStyle = document.getElementById("changeText");
     let color;
     let text;
@@ -72,19 +66,30 @@ function changeTextSize()
 
 let counter = 0;
 //only for when the button is clicked - acts like a while/for loop in itself!
-function hideShowFeature()
-{
+function hideShowFeature() {
     let text = "This is a moody message";
     let fakeText = "";
-    
-    if(counter % 2 === 0)
-    {
+
+    if (counter % 2 === 1) {
         document.getElementById("hide-show-text").textContent = text;
     }
-    else
-    {
+    else {
         document.getElementById("hide-show-text").textContent = fakeText;
     }
 
     counter++;
 }
+
+// let toggled = false;
+// function hideShowFeature()
+// {
+//     toggled = !toggled;
+//     if (toggled)
+//     {
+//         document.getElementById("hide-show-text").textContent = "";
+//     }
+//     else
+//     {
+//         document.getElementById("hide-show-text").textContent = "This is a moody message";
+//     }
+// }
