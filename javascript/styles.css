@@ -1,21 +1,29 @@
+/* sets the color for the entire background */
 body{
     background-color: #F7A9A8;
 }
 
+/* for the classes that are buttonText (all the buttons), they are styled accordingly */
 .buttonText {
+    /* rounded edges */
     border-radius: 15px;
+    /* pink background color */
     background-color: #EF798A ;
+    /* the color of the text to purple */
     color: #613F75;
+    /* they all have a border */
     border: 2px solid black;
+    /* and padding elements to space out the text from the border */
     padding: 5px;
 }
 
 
-
+/* for all h3 elements, set the color of the text to a light shade of purle */
 h3 {
     color: #7D82B8;
 }
 
+/* for the sum class, add padding at the bottom to space out the elements */
 .sum{
     padding-bottom: 7px;
 }

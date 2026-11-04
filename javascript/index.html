@@ -1,31 +1,38 @@
+<!-- documentation/header for entire code -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- links the css file for styling -->
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 
+<!-- the main section of code -->
 <body>
     <!-- Greeting based on time of day -->
     <h3>Example 1: Dynamic Greeting</h3>
+    <!-- this is where the javascript will put the code in for it to be displayed -->
     <div id="greetingOutput"></div>
 
+    <!-- connecting the JavaScript file to the HTML file-->
     <script src="script.js"></script>
 
-    <!-- show text when i click a button -->
+    <!-- show text when I click a button -->
     <h3>Example 2</h3>
+    <!-- the onclick attribute enables for each time the button is clicked the respective javascript function occurs -->
     <button onclick="setButtonText()" class="buttonText">Click Me!</button>
     <div id="buttonClickText"></div>
 
-    <!-- show text when i click a button -->
+    <!-- show text when I click a button -->
     <h3>Example 3: Button Date + Time</h3>
+    <!-- the onclick attribute enables for each time the button is clicked the respective javascript function occurs -->
     <button onclick="setButtonDateTime()" class="buttonText">Click Me for Date and Time!</button>
     <div id="buttonDateTime"></div>
 
 
+    <!-- sections specifically for the addition of 2 numbers -- for styling purposes -->
     <section class="sum">
         <!-- get number 1 -->
         <h3>Example 4: JavaScript numeric values</h3>
@@ -34,40 +41,44 @@
     </section>
 
     <section class="sum">
-        <!-- get number 1 -->
+        <!-- get number 2 -->
         <label>Number 2: </label>
         <input id="number2" type="number"><br>
     </section>
 
     <section class="sum">
+        <!-- the onclick attribute enables for each time the button is clicked the respective javascript function occurs -->
         <button onclick="addNumbers()" class="buttonText">Add the numbers!</button>
         <div id="buttonSum"></div>
     </section>
-
+ 
+    <!-- the length of the user input -->
     <h3>Example 5: JavaSCript String</h3>
     <input type="text" id="fetchLetters">
+    <!-- the onclick attribute enables for each time the button is clicked the respective javascript function occurs -->
     <button onclick="findLen()" class="buttonText">Try this!</button>
     <div id="buttonLength"></div>
 
+    <!-- hiding / showing a password -->
     <h3>Example 6: Toggle Password Display</h3>
     <label>Password: </label>
+    <!-- type="password" gives the text certain "priviliges" like being hidden when it is typed -->
     <input type="password" id="togglePassword">
+    <!-- the onclick attribute enables for each time the button is clicked the respective javascript function occurs -->
     <input type="checkbox" onclick="togglePassword()">
     <label>Hide/Show Password</label>
 
+    <!-- changing the size and color of a text -->
     <h3>Example 7: Change font size/color</h3>
     <p id="changeText">Click the button below to change this text</p>
+    <!-- the onclick attribute enables for each time the button is clicked the respective javascript function occurs -->
     <button id="changeSize" onclick="changeTextSize()" class="buttonText">Click me!</button>
 
 
+    <!-- hiding and showing a DIV element's text -->
     <h3>Example 8: Hide/Show HTML Elements</h3>
     <button onclick="hideShowFeature()" id="hide-show-elements" class="buttonText">Toggle Display!</button>
     <div id="hide-show-text">This is a moody message</div>
-
-
-
-
-
 
 </body>
 
